@@ -101,9 +101,9 @@ cell.spec.ci.or <- function(x, round.val)
       {
         mod_val <- c(mod_val, "< 0.001")
       }
-      else if(value > 100000)
+      else if(value > 10000)
       {
-        mod_val <- c(mod_val, formatC(value, format = "e", digits = 2))
+        mod_val <- c(mod_val, "> 10,000")
       }
       else
       {
